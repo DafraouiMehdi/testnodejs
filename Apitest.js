@@ -12,8 +12,10 @@ app.get('/' , (req , responce)=>{
 app.get('/post' , (req , responce)=>{
     let username = 'dafraoui@gmail.com'; 
     let password = 'Mehdi2005';
-    if (username === 'dafraouimehdi05@gmail.com' && password === 'Mehdi2005') {
+    if (username === 'dafraoui@gmail.com' && password === 'Mehdi2005') {
         responce.send('Welcome to page home');
+    }else{
+        responce.send('not found !!!!');
     }
     console.log('Get Request Successfully !');
 });
